@@ -35,9 +35,16 @@ d = {index: value for index, value in enumerate(arr)}
 nums = [2,7,22,25]
 val = 9
 
+# d = {key: index for index, key in enumerate(nums)}
+# for i in d.keys():
+#     ans = val - i
+#     if ans in d:
+#         print(d[ans])
+    
+
+
 d = {key: index for index, key in enumerate(nums)}
 for i in d.keys():
-    ans = val - i
-    if ans in d:
-        print(d[ans])
-    
+    answer = val - i
+    if answer in d:
+        print(d[answer])
