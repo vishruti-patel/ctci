@@ -1,3 +1,24 @@
+#dict:
+
+
+d = {'I' : 1,
+     'II' : 2,
+     'V': 5,
+     'X': 10
+     }
+  
+print(d['I'])                       #accessing value of a specific key
+print("value of keys:", d.keys())   #access all keys
+print(d.values())                   #access all values
+print(d.items())                    #access all the key value pair
+
+
+
+
+
+
+
+
 # x = ["Raxit Solanki", "Vishruti Patel", "Vishruti Solanki"]
 
 
@@ -57,13 +78,13 @@
 
 
 
-"""Set:
-"""
+# """Set:
+# """
 
-#create set:
-s = {1,2,2,1,1}
-arr = []
-# s = {'richie'}
-for i in s:
-    i = arr[i]
-    print(s)
+# #create set:
+# s = {1,2,2,1,1}
+# arr = []
+# # s = {'richie'}
+# for i in s:
+#     i = arr[i]
+#     print(s)
