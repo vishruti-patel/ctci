@@ -1,2 +1,47 @@
-Hi I am Richi 
-Hi I am richi
+[
+  {
+    "session_id": "abc123",
+    "user": {
+      "id": 101,
+      "name": "Alice"
+    },
+    "language": "Spanish",
+    "start_time": "2025-07-28T13:05:00-04:00",
+    "end_time": "2025-07-28T13:30:00-04:00",
+    "feedback_score": 4.5,
+    "metadata": {
+      "device": "iOS",
+      "connection": "wifi"
+    }
+  },
+  {
+    "session_id": "def456",
+    "user": {
+      "id": 102,
+      "name": "Bob"
+    },
+    "language": "French",
+    "start_time": "2025-07-28T14:10:00-04:00",
+    "end_time": "2025-07-28T14:35:00-04:00",
+    "feedback_score": 3.8,
+    "metadata": {
+      "device": "Android",
+      "connection": "4G"
+    }
+  },
+  {
+    "session_id": "ghi789",
+    "user": {
+      "id": 103,
+      "name": "Charlie"
+    },
+    "language": "Mandarin",
+    "start_time": "2025-07-28T15:00:00-04:00",
+    "end_time": "2025-07-28T15:25:00-04:00",
+    "feedback_score": 5.0,
+    "metadata": {
+      "device": "Web",
+      "connection": "ethernet"
+    }
+  }
+]

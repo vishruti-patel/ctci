@@ -15,4 +15,4 @@ def binarySearch(arr, target):
     return left
         
 
-binarySearch([1,2,4,5], 3)
+print(binarySearch([1,2,4,5], 3))
