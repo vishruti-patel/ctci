@@ -8,7 +8,7 @@ No two letters map to the same word, and no two words map to the same letter.
 
 
 def word_pattern(pattern, word):
-    word = word.split(' ')
+    # word = word.split(' ')
 
     d = { }
 
