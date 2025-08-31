@@ -28,6 +28,16 @@ def inorder(root):
         inorder(root.right)
 
 
+#searching the node:
+
+def search(root, target):
+    if not root or target == root.value:
+        return root
+    if target < root.value:
+        return search(root.left, target)
+    else:
+        return search(root.right, target)
+
 if __name__ == "__main__":
     root = Node(8)
     insert(root, 3)
@@ -35,6 +45,11 @@ if __name__ == "__main__":
     insert(root, 4)
     insert(root, 6)
 
-
+    print("Inorder traversal:", end=" ")
     inorder(root)
 
+    search_value = search(root, 2)
+    if search_value:
+        print("\nValue founded!")
+    else:
+        print("\nValue not present")
