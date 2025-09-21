@@ -13,7 +13,10 @@ class Solution:
             if not left_root or not right_root:
                 return False
             
-            return (left_root.val == right_root.val  and dfs(left_root.left, right_root.right) and dfs(left_root.right, right_root.left))
+            return (left_root.val == right_root.val  and 
+                    dfs(left_root.left, right_root.right) and 
+                    dfs(left_root.right, right_root.left))
 
 
         return dfs(root.left, root.right)
+    
