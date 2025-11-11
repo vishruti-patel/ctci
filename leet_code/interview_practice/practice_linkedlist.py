@@ -1,4 +1,4 @@
-"""class Node:
+class Node:
     def __init__(self, data):
         self.data = data
         self.next = None            #reference to the next node.
@@ -26,30 +26,30 @@ if __name__ == '__main__':
     l.insert_at_start('end')
 
     l.print_list()
-"""
+
 
 #print simple linkedlist:
 
-class Node:
-    def __init__(self, val, next = None):
-        self.val = val
-        self.next = next
+# class Node:
+#     def __init__(self, val, next = None):
+#         self.val = val
+#         self.next = next
 
-class LinkedList:
-    node1 = Node(1)
-    node2 = Node(2)
-    node3 = Node(3)
+# class LinkedList:
+#     node1 = Node(1)
+#     node2 = Node(2)
+#     node3 = Node(3)
 
-    head = node1
+#     head = node1
 
-    node1.next = node2
-    node2.next = node3
+#     node1.next = node2
+#     node2.next = node3
 
 
-    curr = head
-    while curr:
-        print(curr.val, end= "->")
-        curr = curr.next
+#     curr = head
+#     while curr:
+#         print(curr.val, end= "->")
+#         curr = curr.next
 
     
 

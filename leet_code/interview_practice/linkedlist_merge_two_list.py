@@ -46,9 +46,3 @@ if __name__ == '__main__':
 
     print_list(l.merge_two_list(a,b))
 
-
-
-
-
-
-

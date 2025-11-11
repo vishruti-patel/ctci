@@ -45,3 +45,18 @@ print(l.cycle(node1))
 
 
 
+"""
+use floyd's tortoise and hare concept.
+slow, fast = head, head
+
+
+while fast or fast.next:
+slow = slow.next
+fast = fast.next.next
+
+if slow == fast
+return True
+
+"""
+
+

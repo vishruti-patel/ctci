@@ -2,54 +2,67 @@
 basic implentation of a BST
 """
 
-
 class Node:
-    def __init__(self,value):
-        self.value = value
+    def __init__(self,val):
+        self.val = val
         self.left = None
         self.right = None
-
     
-def insert(root, value):
-    if not root:
-        return Node(value)
-    if value < root.value:
-        root.left = insert(root.left, value)
-    elif value > root.value:
-        root.right = insert(root.right, value)
+    def __repr__(self):
+        return f"Node(val={self.val}, left={self.left}, right={self.right})"
+class solution:
+    def __init__(self):
+        self.root = None
 
-    return root
-
-
-def inorder(root):
-    if root:
-        inorder(root.left)
-        print(root.value, end = " ")
-        inorder(root.right)
+    def tree(self):
+        self.root = Node(30)
+        self.root.left = Node(25)
+        self.root.right = Node(35)
+        self.root.left.left = Node(24)
+        self.root.left.right = Node(26)
 
 
-#searching the node:
+    #we did not pass 'root' as an argument as we are using instance variable self.root (stack = [self.root]). 
+    def traverse(self):
+        result = []
+        stack = [self.root]
 
-def search(root, target):
-    if not root or target == root.value:
-        return root
-    if target < root.value:
-        return search(root.left, target)
-    else:
-        return search(root.right, target)
+        while stack:
+            node = stack.pop()
+            result.append(node.val)
 
-if __name__ == "__main__":
-    root = Node(8)
-    insert(root, 3)
-    insert(root, 10)
-    insert(root, 4)
-    insert(root, 6)
+            if node.right:
+                stack.append(node.right)
+            if node.left:
+                stack.append(node.left)
 
-    print("Inorder traversal:", end=" ")
-    inorder(root)
+        return result
+    
 
-    search_value = search(root, 2)
-    if search_value:
-        print("\nValue founded!")
-    else:
-        print("\nValue not present")
+    def depth_of_tree(self):
+        depth_max = 1
+        stack = [(self.root, 1)]
+
+        while stack:
+            node, depth = stack.pop()
+
+            depth_max = max(depth_max, depth)
+            print(node.val, depth)
+
+            if node.right:
+                stack.append((node.right, depth + 1))
+            if node.left:
+                stack.append((node.left, depth + 1))
+
+        return depth_max
+                
+    
+if __name__ == '__main__':
+    obj = solution()
+    obj.tree()
+    # print(obj.root)
+    # print(obj.traverse())
+    print(obj.depth_of_tree())
+
+
+

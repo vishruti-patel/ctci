@@ -1,0 +1,36 @@
+- Binary Tree
+
+Binary Tree is a type of DS which is non-linerar and hierarchial
+- Has at most 2 children - Left Node and Right Node.
+- Each node in Binary Tree has 2 parts: Data, Pointer to left chil, Pointer to Right Child
+
+# Types of Binary Trees:
+1. Based on Nodes Values:
+    - BST
+    - AVL
+    - B Tree
+    - B+ Tree
+    - Red Black Tree
+    - Segment Tree
+
+2. Based on no. of children:
+    - Full BT
+    - Degenerate BT
+    - Skewed BT
+
+3. Based on completion of levels:
+    - Complete BT
+    - Perfect BT
+    - Balanced BT
+
+# Operations on Binary Tree:
+1. Tree Traversal.
+    We can traverse tree by 2 ways - 
+        - DFS(Depth First Search): Pre-order traversal (Node ,Left, Right)
+                                    In-Order  (Left, Node, Right)
+                                    Post-Order (Left, Right, Node)
+        - BFS 
+2. Insert new node in Tree
+3. Delete a node
+4. 
+                
